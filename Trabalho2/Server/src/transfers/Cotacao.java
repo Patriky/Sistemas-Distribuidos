@@ -13,10 +13,14 @@ public class Cotacao {
     private int num_passageiro, tipo_veiculo;
 
     void insere(){
-        this.etinerario = JOptionPane.showInputDialog("Etinerário:");
-        this.tipo_veiculo = Integer.parseInt( JOptionPane.showInputDialog("Veiculo:\n1 - Executivo\n2 - Compartilhado\n3 - Exclusivo") );
-        this.preço = Float.parseFloat( JOptionPane.showInputDialog("Preço:") );
-        this.num_passageiro = Integer.parseInt( JOptionPane.showInputDialog("Número de passageiros:") );
+        setEtinerario(JOptionPane.showInputDialog("Etinerário:"));
+        System.out.println("Etinerario: " + getEtinerario());
+        setTipo_veiculo( Integer.parseInt( JOptionPane.showInputDialog("Veiculo:\n1 - Executivo\n2 - Compartilhado\n3 - Exclusivo") ));
+        System.out.println("Tipo de veiculo: " + getTipo_veiculo());
+        setPreço( Float.parseFloat( JOptionPane.showInputDialog("Preço:") ));
+        System.out.println("Preço: "+ getPreço());
+        setNum_passageiro( Integer.parseInt( JOptionPane.showInputDialog("Número de passageiros:") ));
+        System.out.println("Num passageiro: " + getNum_passageiro());
 
     }
 

@@ -11,10 +11,8 @@ public class Server {
             Registry referenceServiceNames = LocateRegistry.createRegistry(1099);
 
             InterfaceServidor_impl servicoCliente = new InterfaceServidor_impl();
-            InterfaceMotorista_Impl servicoMotorista = new InterfaceMotorista_Impl();
 
             referenceServiceNames.rebind("ServicoCliente", servicoCliente);
-            referenceServiceNames.rebind("ServicoMotorista", servicoMotorista);
             System.out.printf("\nIniciando servidor...\n");
 
 
