@@ -10,7 +10,6 @@ public class Motorista {
 
             Registry registry = LocateRegistry.getRegistry();
 
-
             InterfaceMotorista serv = (InterfaceMotorista) registry.lookup("ServicoMotorista");
 
             InterfaceMotorista_Impl teste = new InterfaceMotorista_Impl(serv);

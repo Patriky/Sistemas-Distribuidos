@@ -3,10 +3,10 @@ package transfers;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class InterfaceCli_Impl extends UnicastRemoteObject implements InterfaceCliente {
+public class InterfaceCliente_Impl extends UnicastRemoteObject implements InterfaceCliente {
 
 
-    protected InterfaceCli_Impl() throws RemoteException {
+    protected InterfaceCliente_Impl() throws RemoteException {
 
     }
 

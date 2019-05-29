@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b5f9d8f-ecb0-4b09-a0df-c86113ba9da1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Motorista/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4b5f9d8f-ecb0-4b09-a0df-c86113ba9da1" name="Default Changelist" comment="Commit with IntelliJs">
+      <change afterPath="$PROJECT_DIR$/../Motorista/src/transfers/InterfaceServidorMotorista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorCliente_Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorMotorista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Motorista/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Motorista/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Motorista/src/transfers/InterfaceMotorista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Motorista/src/transfers/InterfaceMotorista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Motorista/out/production/Motorista/transfers/InterfaceMotorista.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Motorista/out/production/Motorista/transfers/InterfaceMotorista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Motorista/out/production/Motorista/transfers/Motorista.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Motorista/out/production/Motorista/transfers/Motorista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Motorista/src/transfers/Motorista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Motorista/src/transfers/Motorista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/Cotacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/Cotacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceMotorista_Impl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceMotorista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceMotorista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/InterfaceServidorCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorMotorista_impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/transfers/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cliente/transfers/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cliente/transfers/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cliente/transfers/InterfaceCli_Impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/cliente/transfers/InterfaceServidor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transfers/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transfers/InterfaceCli_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/InterfaceCliente_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/transfers/InterfaceServidor.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceServidor.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceServidorCliente.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
+            <state relative-caret-position="70">
               <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -51,10 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCli_Impl.java">
+        <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCliente_Impl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="70">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transfers/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="290">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,10 +111,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="80" />
-    <option name="y" value="47" />
-    <option name="width" value="1159" />
-    <option name="height" value="636" />
+    <option name="x" value="52" />
+    <option name="y" value="27" />
+    <option name="width" value="657" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -141,6 +154,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,18 +212,26 @@
       <workItem from="1558932159198" duration="1751000" />
       <workItem from="1558968711830" duration="1604000" />
       <workItem from="1558981094722" duration="20767000" />
-      <workItem from="1559080461574" duration="1260000" />
+      <workItem from="1559080461574" duration="5736000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit with IntelliJs">
+      <created>1559082076490</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559082076491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25382000" />
+    <option name="totallyTimeSpent" value="29858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="27" width="1314" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17767295" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19575472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -228,7 +250,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -243,20 +265,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit with IntelliJ" />
+    <MESSAGE value="Commit with IntelliJs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit with IntelliJs" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceServidor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
+        <state relative-caret-position="70">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -264,10 +281,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCli_Impl.java">
+    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCliente_Impl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="70">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -276,8 +293,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transfers/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="290">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceServidorCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

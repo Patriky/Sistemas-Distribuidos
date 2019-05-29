@@ -16,10 +16,10 @@ public class Cliente {
             //para obter uma referência de objeto remoto
             //ser: Referencia de objeto remoto
             //"ServicoCliente": serviço disponível
-            InterfaceServidor serv = (InterfaceServidor) referenciaServicoNomes.lookup("ServicoCliente");
+            InterfaceServidorCliente serv = (InterfaceServidorCliente) referenciaServicoNomes.lookup("ServicoCliente");
 
 
-            InterfaceCli_Impl referenciaCliente = new InterfaceCli_Impl();
+            InterfaceCliente_Impl referenciaCliente = new InterfaceCliente_Impl();
             //Usando a referencia para acessar o método e passando a propria referencia como parametro
             serv.cotar(referenciaCliente);
 
