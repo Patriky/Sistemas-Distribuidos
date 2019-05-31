@@ -19,14 +19,13 @@ public class InterfaceMotorista_Impl extends UnicastRemoteObject implements Inte
         System.out.println("\n**** Notificação recebida! **** \n[1] para ler:");
         in.nextInt();
 
-        int resposta = JOptionPane.showConfirmDialog(null, "Para: "+itinerario + "\nR$"+ preco + "\n[Sim]Aceitar \n[Não]diminuir?");
+        int resposta = JOptionPane.showConfirmDialog(null, "Para: "+itinerario + "\nR$"+ preco + "\n[Sim] Aceitar \n[Não] Diminuir?");
         if (resposta == 0){
             return 0;
         }else{
             if (resposta == 1){
                 double proposta = Double.parseDouble( JOptionPane.showInputDialog("Sugira um novo valor!"));
                 return proposta;
-
             }
         }
         return -1;

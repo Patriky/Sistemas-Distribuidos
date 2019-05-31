@@ -1,18 +1,15 @@
 package transfers;
 
-import javax.swing.*;
-import java.rmi.Remote;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class InterfaceServidor_Impl extends UnicastRemoteObject implements InterfaceServidor {
 
 
-    ArrayList<Cotacao> cotacoes = new ArrayList();
-    ArrayList<Oferta> ofertas = new ArrayList();
+    ArrayList<Cotacao> cotacoes = new ArrayList(); //Array com todas as cotações dos clientes
+    ArrayList<Oferta> ofertas = new ArrayList(); //Array com ofertas dos motoristas
 
 
     InterfaceServidor_Impl() throws RemoteException {
@@ -25,6 +22,7 @@ public class InterfaceServidor_Impl extends UnicastRemoteObject implements Inter
 
         Cotacao cot =new Cotacao(interfaceCli);
         cotacoes.add(cot);
+
 
         verificaInteresseCliente(cot, interfaceCli);
     }
@@ -91,7 +89,7 @@ public class InterfaceServidor_Impl extends UnicastRemoteObject implements Inter
 
 
     // VERIFICA SE HA ALGUMA COTAÇÃO
-    public void verificaInteresseMotorista(Oferta oferta , InterfaceMotorista interfaceMotorista) throws RemoteException {
+    public synchronized void verificaInteresseMotorista(Oferta oferta , InterfaceMotorista interfaceMotorista) throws RemoteException {
         /**
          * Caminhando por todos os clientes disponíveis
          * */

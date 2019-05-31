@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Cotacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Cotacao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/Cotacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/Cotacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_Impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transfers/InterfaceCliente_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/InterfaceCliente_Impl.java" afterDir="false" />
     </list>
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCliente_Impl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="86">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transfers/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="188">
+              <caret line="20" column="79" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,7 +97,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="52" />
     <option name="y" value="27" />
     <option name="width" value="657" />
@@ -157,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Cliente">
+  <component name="RunManager" selected="Application.Cliente3">
     <configuration name="Cliente" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="transfers.Cliente" />
       <module name="cliente" />
@@ -211,7 +210,7 @@
       <workItem from="1558981094722" duration="20767000" />
       <workItem from="1559080461574" duration="12410000" />
       <workItem from="1559168275634" duration="13225000" />
-      <workItem from="1559250987783" duration="30033000" />
+      <workItem from="1559250987783" duration="34099000" />
     </task>
     <task id="LOCAL-00001" summary="Commit with IntelliJs">
       <created>1559082076490</created>
@@ -224,10 +223,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79790000" />
+    <option name="totallyTimeSpent" value="83856000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="27" width="1314" height="741" extended-state="6" />
+    <frame x="52" y="27" width="1314" height="741" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20204403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -322,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transfers/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="188">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -332,8 +332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceCliente_Impl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="86">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

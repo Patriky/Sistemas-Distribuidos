@@ -10,7 +10,9 @@ public class InterfaceCliente_Impl extends UnicastRemoteObject implements Interf
     Scanner in = new Scanner(System.in);
     protected InterfaceCliente_Impl(InterfaceServidor servidor) throws RemoteException {
 
+        //Cliente pede cotação e passa o sua referencia ao server
         servidor.cotar(this);
+
     }
 
     //Notificação para o cliente aceitar ou sugerir um novo preço
@@ -27,7 +29,8 @@ public class InterfaceCliente_Impl extends UnicastRemoteObject implements Interf
               de receber notificação
             */
             } else{
-                return Double.parseDouble(JOptionPane.showInputDialog("Digite a proposta!"));
+                //return Double.parseDouble(JOptionPane.showInputDialog("Digite a proposta!"));
+                return -1;
 
             }
         }else{
