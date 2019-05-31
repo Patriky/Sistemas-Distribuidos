@@ -7,7 +7,7 @@ public class Cotacao {
 
 
 
-    Cotacao(Remote cliente) {
+    Cotacao(InterfaceCliente cliente) {
         this.setCliente(cliente);
         insere();
     }   
@@ -16,10 +16,10 @@ public class Cotacao {
     private float preço;
     private int num_passageiro;
     private int tipo_veiculo;
-    private Remote cliente;
+    private InterfaceCliente cliente;
 
     void insere(){
-        setItinerario(JOptionPane.showInputDialog("Etinerário:"));
+        setItinerario(JOptionPane.showInputDialog("Itinerário:"));
         setTipo_veiculo( Integer.parseInt( JOptionPane.showInputDialog("Veiculo:\n1 - Executivo\n2 - Compartilhado\n3 - Exclusivo") ));
         if (getTipo_veiculo() != 3){
             setNum_passageiro( Integer.parseInt( JOptionPane.showInputDialog("Número de passageiros:") ));
@@ -77,7 +77,7 @@ public class Cotacao {
         return cliente;
     }
 
-    public void setCliente(Remote cliente) {
+    public void setCliente(InterfaceCliente cliente) {
         this.cliente = cliente;
     }
 }

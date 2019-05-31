@@ -13,6 +13,7 @@ public class InterfaceMotorista_Impl extends UnicastRemoteObject implements Inte
 
     }
 
+    //Notificação para o motorista aceitar ou sugerir um novo preço
     @Override
     public double notificacaoMot(double preco, String itinerario) throws RemoteException {
         System.out.println("\n**** Notificação recebida! **** \n[1] para ler:");
@@ -36,7 +37,7 @@ public class InterfaceMotorista_Impl extends UnicastRemoteObject implements Inte
     public void notificacaoConfirmacao() throws RemoteException {
         System.out.println("\n**** Notificação recebida!\n[1] para ler: ****");
         in.nextInt();
-        JOptionPane.showMessageDialog(null, "Corrida aceita!");
+        JOptionPane.showMessageDialog(null, "Transfer reservado!");
         //Chamar algum metodo para notificar o cliente e tirar ambos do
     }
 

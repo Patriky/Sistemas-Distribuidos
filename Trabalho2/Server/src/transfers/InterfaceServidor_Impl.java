@@ -26,7 +26,7 @@ public class InterfaceServidor_Impl extends UnicastRemoteObject implements Inter
         Cotacao cot =new Cotacao(interfaceCli);
         cotacoes.add(cot);
 
-        verificaInteresse(cot, interfaceCli);
+        verificaInteresseCliente(cot, interfaceCli);
     }
 
     //Método disponível para Motoristas
@@ -35,9 +35,11 @@ public class InterfaceServidor_Impl extends UnicastRemoteObject implements Inter
 
         Oferta ofer =new Oferta(interfaceMotorista);
         ofertas.add(ofer);
+
+        verificaInteresseMotorista(ofer, interfaceMotorista);
     }
     // VERIFICA SE HA ALGUMA COTAÇÃO
-    public void verificaInteresse(Cotacao cotacao , InterfaceCliente interfaceCli) throws RemoteException {
+    public synchronized void verificaInteresseCliente(Cotacao cotacao , InterfaceCliente interfaceCli) throws RemoteException {
         /**
          * Caminhando por todos os motoristas disponíveis
          * */
@@ -81,12 +83,63 @@ public class InterfaceServidor_Impl extends UnicastRemoteObject implements Inter
                 }
                 break;
             }else {
-                System.out.println("CARROS DIFERENTES");
+                System.out.println("Caracteristicas distintas");
             }
         }
     }
 
 
+
+    // VERIFICA SE HA ALGUMA COTAÇÃO
+    public void verificaInteresseMotorista(Oferta oferta , InterfaceMotorista interfaceMotorista) throws RemoteException {
+        /**
+         * Caminhando por todos os clientes disponíveis
+         * */
+        for(Cotacao cot : cotacoes) {
+            /**
+             * Verifica se o cliente disponível tem as mesmas caracteristas que
+             * o solicitado pelo cliente
+             * */
+            if (oferta.getTipo_veiculo() == cot.getTipo_veiculo() && oferta.getNum_passageiro() >= cot.getNum_passageiro()) {
+
+                double respostaMotorista =interfaceMotorista.notificacaoMot(cot.getPreço(),cot.getItinerario());
+                if (respostaMotorista == 0){
+                    System.out.println("Entrou no if");
+                    InterfaceCliente cliente = (InterfaceCliente) cot.getCliente();
+                    double respostaCliente = cliente.notificacaoCli(0, "Motorista X");
+                    if (respostaCliente ==0){
+                        cliente.notificacaoConfirmacao();
+                        interfaceMotorista.notificacaoConfirmacao();
+                        System.out.println("Corrida aceita");
+                        //deletar os dois do array
+                        cotacoes.remove(cot);
+                        ofertas.remove(oferta);
+                        System.out.println("Ambos removidos das listas\n");
+
+                    }
+                    break;
+                }else{
+                    InterfaceCliente cliente = (InterfaceCliente) cot.getCliente();
+                    double respostaCLiente = cliente.notificacaoCli(respostaMotorista,"João da Silva");
+                    if (respostaCLiente==0){
+                        cliente.notificacaoConfirmacao();
+                        interfaceMotorista.notificacaoConfirmacao();
+                        System.out.println("Corrida aceita");
+                        //deletar os dois do array
+                        cotacoes.remove(cot);
+                        ofertas.remove(oferta);
+                        System.out.println("Ambos removidos das listas\n");
+                        break;
+                    }
+
+                }
+
+
+
+
+            }
+        }
+    }
 
 
 

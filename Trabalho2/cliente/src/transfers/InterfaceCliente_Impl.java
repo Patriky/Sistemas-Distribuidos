@@ -13,6 +13,7 @@ public class InterfaceCliente_Impl extends UnicastRemoteObject implements Interf
         servidor.cotar(this);
     }
 
+    //Notificação para o cliente aceitar ou sugerir um novo preço
     @Override
     public double notificacaoCli(double preco,String motorista) throws RemoteException {
         System.out.println("\n**** Notificação recebida! **** \n(1. ler)");
@@ -37,11 +38,12 @@ public class InterfaceCliente_Impl extends UnicastRemoteObject implements Interf
         }
     }
 
+    //Notificação de confirmação de reserva de transfer
     @Override
     public void notificacaoConfirmacao() throws RemoteException {
         System.out.println("\n**** Notificação recebida!\n[1] para ler: ****");
         in.nextInt();
-        JOptionPane.showMessageDialog(null, "Corrida aceita!");
+        JOptionPane.showMessageDialog(null, "Transfer reservado!");
         //Chamar algum metodo para notificar o cliente e tirar ambos do
     }
 }
