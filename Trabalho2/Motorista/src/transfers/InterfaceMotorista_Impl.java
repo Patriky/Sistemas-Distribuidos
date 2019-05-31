@@ -1,19 +1,44 @@
 package transfers;
 
+import javax.swing.*;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.Scanner;
 
 public class InterfaceMotorista_Impl extends UnicastRemoteObject implements InterfaceMotorista {
 
-    private InterfaceMotorista interfaceMotorista = null;
-    protected InterfaceMotorista_Impl(InterfaceMotorista interfaceMotorista) throws RemoteException {
-        this.interfaceMotorista = interfaceMotorista;
+    Scanner in = new Scanner(System.in);
+    public InterfaceMotorista_Impl(InterfaceServidor servidor) throws RemoteException {
+        servidor.ofertar(this);
 
     }
 
     @Override
-    public void notificacaoMot() throws RemoteException {
-        System.out.println("NotificacaoMot OK");
+    public double notificacaoMot(double preco, String itinerario) throws RemoteException {
+        System.out.println("\n**** Notificação recebida! **** \n[1] para ler:");
+        in.nextInt();
 
+        int resposta = JOptionPane.showConfirmDialog(null, "Para: "+itinerario + "\nR$"+ preco + "\nAceita?");
+        if (resposta == 0){
+            return 0;
+        }else{
+            if (resposta == 1){
+                double proposta = Double.parseDouble( JOptionPane.showInputDialog("Sugira um novo valor!"));
+                System.out.println(proposta);
+                return proposta;
+
+            }
+        }
+        return -1;
     }
+
+    @Override
+    public void notificacaoConfirmacao() throws RemoteException {
+        System.out.println("\n**** Notificação recebida!\n[1] para ler: ****");
+        in.nextInt();
+        JOptionPane.showMessageDialog(null, "Corrida aceita!");
+        //Chamar algum metodo para notificar o cliente e tirar ambos do
+    }
+
+
 }

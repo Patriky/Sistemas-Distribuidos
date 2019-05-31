@@ -8,15 +8,11 @@ public class Server {
     public static void main(String[] args) {
 
         try {
-            Registry referenceServiceNames = LocateRegistry.createRegistry(1099);
-
-            InterfaceServidorCliente_Impl servicoCliente = new InterfaceServidorCliente_Impl();
-            InterfaceServidorMotorista_impl servidorMotorista = new InterfaceServidorMotorista_impl();
-
-
-            referenceServiceNames.rebind("ServicoMotorista", servidorMotorista);
-            referenceServiceNames.rebind("ServicoCliente", servicoCliente);
+            Registry registry = LocateRegistry.createRegistry(1099);
+            InterfaceServidor_Impl servicoCliente = new InterfaceServidor_Impl();
+            registry.rebind("ServicoServidor", servicoCliente);
             System.out.printf("\nIniciando servidor...\n");
+
 
 
         } catch (RemoteException e) {

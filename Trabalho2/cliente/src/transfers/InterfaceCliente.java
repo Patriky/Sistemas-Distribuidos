@@ -4,5 +4,6 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 public interface InterfaceCliente extends Remote {
-    void notificacaoCli() throws RemoteException;
+    double notificacaoCli(String motorista) throws RemoteException;
+    void notificacaoConfirmacao() throws RemoteException;
 }

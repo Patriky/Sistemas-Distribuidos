@@ -1,35 +1,52 @@
 package transfers;
 
 import javax.swing.*;
+import java.rmi.Remote;
 
 public class Cotacao {
 
-    Cotacao() {
+
+
+    Cotacao(Remote cliente) {
+        this.setCliente(cliente);
         insere();
     }   
 
-    private String etinerario;
+    private String itinerario;
     private float preço;
-    private int num_passageiro, tipo_veiculo;
+    private int num_passageiro;
+    private int tipo_veiculo;
+    private Remote cliente;
 
     void insere(){
-        setEtinerario(JOptionPane.showInputDialog("Etinerário:"));
-        System.out.println("Etinerario: " + getEtinerario());
+        setItinerario(JOptionPane.showInputDialog("Etinerário:"));
         setTipo_veiculo( Integer.parseInt( JOptionPane.showInputDialog("Veiculo:\n1 - Executivo\n2 - Compartilhado\n3 - Exclusivo") ));
-        System.out.println("Tipo de veiculo: " + getTipo_veiculo());
+        if (getTipo_veiculo() != 3){
+            setNum_passageiro( Integer.parseInt( JOptionPane.showInputDialog("Número de passageiros:") ));
+        }else {
+            setNum_passageiro(1);
+        }
         setPreço( Float.parseFloat( JOptionPane.showInputDialog("Preço:") ));
-        System.out.println("Preço: "+ getPreço());
-        setNum_passageiro( Integer.parseInt( JOptionPane.showInputDialog("Número de passageiros:") ));
-        System.out.println("Num passageiro: " + getNum_passageiro());
 
     }
 
-    public String getEtinerario() {
-        return etinerario;
+    void printCotacao(){
+
+        System.out.println("\n ----COTAÇÃO----");
+        System.out.println("Usuario: " + getCliente().toString());
+        System.out.println("Itinerario: " + this.getItinerario());
+        System.out.println("Tipo de veiculo: " + this.getTipo_veiculo());
+        System.out.println("Preço: "+ this.getPreço());
+        System.out.println("Num passageiro: " + this.getNum_passageiro());
+
     }
 
-    public void setEtinerario(String etinerario) {
-        this.etinerario = etinerario;
+    public String getItinerario() {
+        return itinerario;
+    }
+
+    public void setItinerario(String itinerario) {
+        this.itinerario = itinerario;
     }
 
     public float getPreço() {
@@ -54,5 +71,13 @@ public class Cotacao {
 
     public void setTipo_veiculo(int tipo_veiculo) {
         this.tipo_veiculo = tipo_veiculo;
+    }
+
+    public Remote getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Remote cliente) {
+        this.cliente = cliente;
     }
 }

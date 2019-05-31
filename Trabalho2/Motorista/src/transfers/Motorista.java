@@ -1,18 +1,15 @@
 package transfers;
 
+import java.net.MalformedURLException;
+import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 
 public class Motorista {
-    public static void main(String[] args) throws RemoteException, NotBoundException {
+    public static void main(String[] args) throws RemoteException, NotBoundException, MalformedURLException {
 
-            Registry registry = LocateRegistry.getRegistry();
+        InterfaceServidor referencia = (InterfaceServidor) Naming.lookup("ServicoServidor");
 
-            InterfaceMotorista serv = (InterfaceMotorista) registry.lookup("ServicoMotorista");
-
-            InterfaceMotorista_Impl teste = new InterfaceMotorista_Impl(serv);
-
+        InterfaceMotorista_Impl motorista = new InterfaceMotorista_Impl(referencia);
     }
 }

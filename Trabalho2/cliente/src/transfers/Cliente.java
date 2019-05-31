@@ -1,6 +1,8 @@
 package transfers;
 
 
+import java.net.MalformedURLException;
+import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -10,23 +12,19 @@ public class Cliente {
     public static void main(String[] args) {
 
         try {
-            //Utilizando o metodo getRegistry para obter uma referencia do SN que está executando no Servidor
-            Registry referenciaServicoNomes = LocateRegistry.getRegistry();
-
             //para obter uma referência de objeto remoto
             //ser: Referencia de objeto remoto
             //"ServicoCliente": serviço disponível
-            InterfaceServidorCliente serv = (InterfaceServidorCliente) referenciaServicoNomes.lookup("ServicoCliente");
+            InterfaceServidor serv = (InterfaceServidor) Naming.lookup("ServicoServidor");
 
 
-            InterfaceCliente_Impl referenciaCliente = new InterfaceCliente_Impl();
+            InterfaceCliente_Impl referenciaCliente = new InterfaceCliente_Impl(serv);
             //Usando a referencia para acessar o método e passando a propria referencia como parametro
-            serv.cotar(referenciaCliente);
 
 
 
 
-        } catch (RemoteException | NotBoundException e) {
+        } catch (RemoteException | NotBoundException | MalformedURLException e) {
             e.printStackTrace();
         }
     }
