@@ -14,19 +14,26 @@ public class InterfaceCliente_Impl extends UnicastRemoteObject implements Interf
     }
 
     @Override
-    public double notificacaoCli(String motorista) throws RemoteException {
+    public double notificacaoCli(double preco,String motorista) throws RemoteException {
         System.out.println("\n**** Notificação recebida! **** \n(1. ler)");
         in.nextInt();
-        int proposta = JOptionPane.showConfirmDialog(null,"Motorista: "+ motorista);
+        if (preco ==0){
+            int proposta = JOptionPane.showConfirmDialog(null,"Motorista: "+ motorista);
 
-        if (proposta == 0){
-            return 0;
+            if (proposta == 0){
+                return 0;
             /*Chamar notificacao para motorista informando que a corrida foi aceita e parar
               de receber notificação
             */
-        } else{
-            return Double.parseDouble(JOptionPane.showInputDialog("Digite a proposta!"));
+            } else{
+                return Double.parseDouble(JOptionPane.showInputDialog("Digite a proposta!"));
 
+            }
+        }else{
+            int proposta = JOptionPane.showConfirmDialog(null, motorista + " deseja diminuir o valor" +
+                    "\nNovo preço proposto: R$"+preco + "\nAceita?");
+
+            return proposta;
         }
     }
 

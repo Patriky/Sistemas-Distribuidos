@@ -2,41 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed86cf57-cfa9-4678-8668-5aa66c85b863" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/transfers/InterfaceServidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Motorista/transfers/InterfaceMotorista_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Motorista/transfers/InterfaceMotorista_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Motorista/transfers/InterfaceServidorMotorista.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Motorista/transfers/Motorista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Motorista/transfers/Motorista.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transfers/InterfaceMotorista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/InterfaceMotorista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transfers/InterfaceServidorMotorista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transfers/Motorista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/Motorista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Cotacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Cotacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidorCliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidorCliente_Impl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidorMotorista.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidorMotorista_impl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Oferta.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Oferta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/Cotacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/Cotacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_Impl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceMotorista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceMotorista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceServidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorCliente_Impl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorMotorista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidorMotorista_impl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/Oferta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/Oferta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_Impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cliente/out/production/cliente/transfers/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/out/production/cliente/transfers/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cliente/out/production/cliente/transfers/InterfaceCliente_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/out/production/cliente/transfers/InterfaceCliente_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cliente/out/production/cliente/transfers/InterfaceServidorCliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cliente/src/transfers/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/transfers/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceCliente_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceCliente_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceServidorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,23 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceServidor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="25" column="108" lean-forward="true" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+            <state relative-caret-position="100">
+              <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceMotorista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+            <state relative-caret-position="84">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,8 +74,8 @@
         <option value="$PROJECT_DIR$/src/transfers/InterfaceServidorMotorista.java" />
         <option value="$PROJECT_DIR$/src/transfers/Motorista.java" />
         <option value="$PROJECT_DIR$/src/transfers/InterfaceServidor.java" />
-        <option value="$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java" />
         <option value="$PROJECT_DIR$/src/transfers/InterfaceMotorista.java" />
+        <option value="$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java" />
       </list>
     </option>
   </component>
@@ -175,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Motorista">
+  <component name="RunManager" selected="Application.Motorista2">
     <configuration name="Motorista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="transfers.Motorista" />
       <module name="Motorista" />
@@ -220,12 +184,12 @@
       <workItem from="1559070704514" duration="3625000" />
       <workItem from="1559080438521" duration="10070000" />
       <workItem from="1559173193598" duration="5308000" />
-      <workItem from="1559250980674" duration="21541000" />
+      <workItem from="1559250980674" duration="26883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45424000" />
+    <option name="totallyTimeSpent" value="50766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="27" width="1314" height="741" extended-state="6" />
@@ -285,20 +249,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java">
+    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceMotorista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="25" column="108" lean-forward="true" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+        <state relative-caret-position="84">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceMotorista.java">
+    <entry file="file://$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        <state relative-caret-position="100">
+          <caret line="20" column="120" selection-start-line="20" selection-start-column="120" selection-end-line="20" selection-end-column="120" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

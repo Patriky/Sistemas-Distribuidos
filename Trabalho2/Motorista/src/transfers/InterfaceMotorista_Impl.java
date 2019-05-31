@@ -18,13 +18,12 @@ public class InterfaceMotorista_Impl extends UnicastRemoteObject implements Inte
         System.out.println("\n**** Notificação recebida! **** \n[1] para ler:");
         in.nextInt();
 
-        int resposta = JOptionPane.showConfirmDialog(null, "Para: "+itinerario + "\nR$"+ preco + "\nAceita?");
+        int resposta = JOptionPane.showConfirmDialog(null, "Para: "+itinerario + "\nR$"+ preco + "\n[Sim]Aceitar \n[Não]diminuir?");
         if (resposta == 0){
             return 0;
         }else{
             if (resposta == 1){
                 double proposta = Double.parseDouble( JOptionPane.showInputDialog("Sugira um novo valor!"));
-                System.out.println(proposta);
                 return proposta;
 
             }
@@ -32,6 +31,7 @@ public class InterfaceMotorista_Impl extends UnicastRemoteObject implements Inte
         return -1;
     }
 
+    //Reservando Transfer
     @Override
     public void notificacaoConfirmacao() throws RemoteException {
         System.out.println("\n**** Notificação recebida!\n[1] para ler: ****");

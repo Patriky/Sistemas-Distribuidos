@@ -52,25 +52,32 @@ public class InterfaceServidor_Impl extends UnicastRemoteObject implements Inter
                 /**
                  * Verifica se motorista aceita o preco inicial proposto pelo cliente
                  * 0 = Aceitou
-                 * 1 = Não aceitou e retorna um novo valor(double)
+                 * 1 = Motorista decidiu diminuir o valor
                  * -1= Nada, mas buga o código. Se der tempo, corrigir isso.
                  * */
                 double respostaMotorista = motorista.notificacaoMot(cotacao.getPreço(), cotacao.getItinerario());
                 if (respostaMotorista == 0){
 
                     //Notificando o cliente e passando o nome do motorista
-                    double respostaCLiente = interfaceCli.notificacaoCli("João da Silva");
+                    double respostaCLiente = interfaceCli.notificacaoCli(0,"João da Silva");
                     if (respostaCLiente == 0){
-                        motorista.notificacaoConfirmacao();
                         interfaceCli.notificacaoConfirmacao();
+                        motorista.notificacaoConfirmacao();
                         System.out.println("Corrida aceita");
                         //deletar os dois do array
                         cotacoes.remove(cotacao);
                         ofertas.remove(of);
                     }
                 }else{
-                    //Retornando um vnovo valor proposto
-
+                    double respostaCLiente = interfaceCli.notificacaoCli(respostaMotorista,"João da Silva");
+                    if (respostaCLiente==0){
+                        interfaceCli.notificacaoConfirmacao();
+                        motorista.notificacaoConfirmacao();
+                        System.out.println("Corrida aceita");
+                        //deletar os dois do array
+                        cotacoes.remove(cotacao);
+                        ofertas.remove(of);
+                    }
                 }
                 break;
             }else {
