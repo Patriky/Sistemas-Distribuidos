@@ -101,6 +101,7 @@ public class InterfaceServidor_Impl extends UnicastRemoteObject implements Inter
             if (oferta.getTipo_veiculo() == cot.getTipo_veiculo() && oferta.getNum_passageiro() >= cot.getNum_passageiro()) {
 
                 double respostaMotorista =interfaceMotorista.notificacaoMot(cot.getPreço(),cot.getItinerario());
+
                 if (respostaMotorista == 0){
                     System.out.println("Entrou no if");
                     InterfaceCliente cliente = (InterfaceCliente) cot.getCliente();

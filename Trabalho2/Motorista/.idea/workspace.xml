@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed86cf57-cfa9-4678-8668-5aa66c85b863" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transfers/InterfaceMotorista_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Cotacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/Cotacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/transfers/InterfaceServidor_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/transfers/InterfaceServidor_Impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cliente/out/production/cliente/transfers/InterfaceCliente_Impl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/out/production/cliente/transfers/InterfaceCliente_Impl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceCliente_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cliente/src/transfers/InterfaceCliente_Impl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="52" />
     <option name="y" value="27" />
     <option name="width" value="657" />
@@ -193,15 +186,15 @@
       <workItem from="1559070704514" duration="3625000" />
       <workItem from="1559080438521" duration="10070000" />
       <workItem from="1559173193598" duration="5308000" />
-      <workItem from="1559250980674" duration="35269000" />
+      <workItem from="1559250980674" duration="35672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59152000" />
+    <option name="totallyTimeSpent" value="59555000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="27" width="1314" height="741" extended-state="7" />
+    <frame x="52" y="27" width="1314" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22484277" />
@@ -213,7 +206,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32626426" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32626426" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
